@@ -94,7 +94,7 @@ func isPostGIS2(tx *sql.Tx) (bool, error) {
 	if err != nil {
 		return false, &SQLError{sql, err}
 	}
-	return strings.HasPrefix(version, "2."), nil
+	return strings.HasPrefix(version, "2.") || strings.HasPrefix(version, "3."), nil
 }
 
 func populateGeometryColumn(tx *sql.Tx, tableName string, spec TableSpec) error {
