@@ -13,6 +13,8 @@ github.com/lib/pq v0.0.0-20171113044440-8c6ee72f3e6b h1:ITqD/2RWsKgBmfLYE2/urbXT
 github.com/lib/pq v0.0.0-20171113044440-8c6ee72f3e6b/go.mod h1:5WUZQaWbwv1U+lTReE5YruASi9Al49XbQIvNi/34Woo=
 github.com/omniscale/go-osm v0.2.1 h1:NIdUGVmRMKmZCOxQugrFnFFc/9Q0OpfLWn7IzLzMrc0=
 github.com/omniscale/go-osm v0.2.1/go.mod h1:JRbRitKdvYZcmq+6PhI81NP9b5B7sJSvxN9jCc4XGEc=
+github.com/nextgis/imposm3 v0.10.0 h1:WJ0SvtAAABk3oOBbYvuNrMyXb+ZUiHlZ+f0a+lEdZGA=
+github.com/nextgis/imposm3 v0.10.0/go.mod h1:MEY2GEvIhj9hy60Fax9hvyMDif8jnHn8oElpYhH+xxU=
 github.com/pkg/errors v0.8.0 h1:WdK/asTD0HN+q6hsWO3/vpuAkAr+tw6aNJNDFFf0+qw=
 github.com/pkg/errors v0.8.0/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
 golang.org/x/sys v0.0.0-20171114162044-bf42f188b9bc h1:pt5pMsz4A/sZRT17MOvX/nidmCt7n6ILLJBkNh5QqC8=

@@ -7,7 +7,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/omniscale/imposm3/log"
+	"github.com/nextgis/imposm3/log"
 )
 
 // disableDefaultSsl adds sslmode=disable to params

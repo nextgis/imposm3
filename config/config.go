@@ -8,7 +8,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/omniscale/imposm3/log"
+	"github.com/nextgis/imposm3/log"
 )
 
 type Config struct {

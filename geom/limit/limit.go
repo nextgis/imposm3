@@ -7,10 +7,10 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/omniscale/imposm3/geom/geojson"
-	"github.com/omniscale/imposm3/geom/geos"
-	"github.com/omniscale/imposm3/log"
-	"github.com/omniscale/imposm3/proj"
+	"github.com/nextgis/imposm3/geom/geojson"
+	"github.com/nextgis/imposm3/geom/geos"
+	"github.com/nextgis/imposm3/log"
+	"github.com/nextgis/imposm3/proj"
 )
 
 // Tile bbox into multiple sub-boxes, each of `width` size.

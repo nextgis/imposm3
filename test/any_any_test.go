@@ -7,7 +7,7 @@ import (
 
 	"testing"
 
-	"github.com/omniscale/imposm3/geom/geos"
+	"github.com/nextgis/imposm3/geom/geos"
 )
 
 func TestAnyAny(t *testing.T) {

@@ -10,12 +10,12 @@ import (
 	"github.com/lib/pq/hstore"
 
 	osm "github.com/omniscale/go-osm"
-	"github.com/omniscale/imposm3/cache"
-	"github.com/omniscale/imposm3/config"
-	"github.com/omniscale/imposm3/geom/geos"
-	"github.com/omniscale/imposm3/import_"
-	"github.com/omniscale/imposm3/log"
-	"github.com/omniscale/imposm3/update"
+	"github.com/nextgis/imposm3/cache"
+	"github.com/nextgis/imposm3/config"
+	"github.com/nextgis/imposm3/geom/geos"
+	"github.com/nextgis/imposm3/import_"
+	"github.com/nextgis/imposm3/log"
+	"github.com/nextgis/imposm3/update"
 )
 
 type importConfig struct {

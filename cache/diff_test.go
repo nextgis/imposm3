@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	osm "github.com/omniscale/go-osm"
-	"github.com/omniscale/imposm3/element"
+	"github.com/nextgis/imposm3/element"
 )
 
 func TestDiffCache(t *testing.T) {

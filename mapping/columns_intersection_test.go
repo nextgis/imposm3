@@ -5,10 +5,10 @@ import (
 	"testing"
 
 	osm "github.com/omniscale/go-osm"
-	geomp "github.com/omniscale/imposm3/geom"
-	"github.com/omniscale/imposm3/geom/geos"
-	"github.com/omniscale/imposm3/mapping/config"
-	"github.com/omniscale/imposm3/proj"
+	geomp "github.com/nextgis/imposm3/geom"
+	"github.com/nextgis/imposm3/geom/geos"
+	"github.com/nextgis/imposm3/mapping/config"
+	"github.com/nextgis/imposm3/proj"
 )
 
 func TestIntersectsFeatureField(t *testing.T) {

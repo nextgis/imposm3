@@ -9,8 +9,8 @@ import (
 	"strings"
 
 	osm "github.com/omniscale/go-osm"
-	"github.com/omniscale/imposm3/cache"
-	"github.com/omniscale/imposm3/log"
+	"github.com/nextgis/imposm3/cache"
+	"github.com/nextgis/imposm3/log"
 )
 
 var flags = flag.NewFlagSet("query-cache", flag.ExitOnError)

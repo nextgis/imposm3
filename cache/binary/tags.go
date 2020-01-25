@@ -97,7 +97,7 @@ func tagsFromArray(arr []string) osm.Tags {
 			// notify users affected by #112
 			// TODO remove check in the future to avoid misleading message
 			// if a similar issue shows up
-			panic("Internal cache corrupt, see: https://github.com/omniscale/imposm3/issues/122")
+			panic("Internal cache corrupt, see: https://github.com/nextgis/imposm3/issues/122")
 		}
 		result[arr[i]] = arr[i+1]
 		i++

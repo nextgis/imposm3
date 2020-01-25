@@ -5,8 +5,8 @@ import (
 	"regexp"
 
 	osm "github.com/omniscale/go-osm"
-	"github.com/omniscale/imposm3/log"
-	"github.com/omniscale/imposm3/mapping/config"
+	"github.com/nextgis/imposm3/log"
+	"github.com/nextgis/imposm3/mapping/config"
 
 	"github.com/pkg/errors"
 	"gopkg.in/yaml.v2"

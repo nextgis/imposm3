@@ -4,7 +4,7 @@ import (
 	"net/http"
 	_ "net/http/pprof"
 
-	"github.com/omniscale/imposm3/log"
+	"github.com/nextgis/imposm3/log"
 )
 
 func StartHTTPPProf(bind string) {

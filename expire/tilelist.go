@@ -10,7 +10,7 @@ import (
 	"time"
 
 	osm "github.com/omniscale/go-osm"
-	"github.com/omniscale/imposm3/proj"
+	"github.com/nextgis/imposm3/proj"
 )
 
 var mercBbox = [4]float64{

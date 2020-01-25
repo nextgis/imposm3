@@ -3,7 +3,7 @@ package binary
 import (
 	"encoding/binary"
 
-	"github.com/omniscale/imposm3/element"
+	"github.com/nextgis/imposm3/element"
 )
 
 func MarshalIDRefsBunch(idRefs []element.IDRefs) []byte {

@@ -3,7 +3,7 @@ package cache
 import (
 	"github.com/jmhodges/levigo"
 	osm "github.com/omniscale/go-osm"
-	"github.com/omniscale/imposm3/cache/binary"
+	"github.com/nextgis/imposm3/cache/binary"
 )
 
 type NodesCache struct {

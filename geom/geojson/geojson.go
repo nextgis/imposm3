@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/omniscale/imposm3/log"
+	"github.com/nextgis/imposm3/log"
 )
 
 type object struct {

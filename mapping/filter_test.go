@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	osm "github.com/omniscale/go-osm"
-	"github.com/omniscale/imposm3/mapping/config"
+	"github.com/nextgis/imposm3/mapping/config"
 )
 
 func TestTagFilterNodes(t *testing.T) {

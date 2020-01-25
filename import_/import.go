@@ -8,17 +8,17 @@ import (
 	"path/filepath"
 
 	"github.com/omniscale/go-osm/state"
-	"github.com/omniscale/imposm3/cache"
-	"github.com/omniscale/imposm3/config"
-	"github.com/omniscale/imposm3/database"
-	_ "github.com/omniscale/imposm3/database/postgis"
-	"github.com/omniscale/imposm3/geom/limit"
-	"github.com/omniscale/imposm3/log"
-	"github.com/omniscale/imposm3/mapping"
-	"github.com/omniscale/imposm3/reader"
-	"github.com/omniscale/imposm3/stats"
-	"github.com/omniscale/imposm3/update"
-	"github.com/omniscale/imposm3/writer"
+	"github.com/nextgis/imposm3/cache"
+	"github.com/nextgis/imposm3/config"
+	"github.com/nextgis/imposm3/database"
+	_ "github.com/nextgis/imposm3/database/postgis"
+	"github.com/nextgis/imposm3/geom/limit"
+	"github.com/nextgis/imposm3/log"
+	"github.com/nextgis/imposm3/mapping"
+	"github.com/nextgis/imposm3/reader"
+	"github.com/nextgis/imposm3/stats"
+	"github.com/nextgis/imposm3/update"
+	"github.com/nextgis/imposm3/writer"
 )
 
 func Import(importOpts config.Import) {

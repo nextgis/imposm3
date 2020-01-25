@@ -5,7 +5,7 @@ import (
 	"sort"
 
 	osm "github.com/omniscale/go-osm"
-	"github.com/omniscale/imposm3/geom/geos"
+	"github.com/nextgis/imposm3/geom/geos"
 )
 
 type PreparedRelation struct {

@@ -10,11 +10,11 @@ import (
 
 	"github.com/omniscale/go-osm/replication/diff"
 	"github.com/omniscale/go-osm/state"
-	"github.com/omniscale/imposm3/cache"
-	"github.com/omniscale/imposm3/config"
-	"github.com/omniscale/imposm3/expire"
-	"github.com/omniscale/imposm3/geom/limit"
-	"github.com/omniscale/imposm3/log"
+	"github.com/nextgis/imposm3/cache"
+	"github.com/nextgis/imposm3/config"
+	"github.com/nextgis/imposm3/expire"
+	"github.com/nextgis/imposm3/geom/limit"
+	"github.com/nextgis/imposm3/log"
 )
 
 func Run(baseOpts config.Base) {

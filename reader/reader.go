@@ -11,12 +11,12 @@ import (
 
 	osm "github.com/omniscale/go-osm"
 	"github.com/omniscale/go-osm/parser/pbf"
-	osmcache "github.com/omniscale/imposm3/cache"
-	"github.com/omniscale/imposm3/geom/geos"
-	"github.com/omniscale/imposm3/geom/limit"
-	"github.com/omniscale/imposm3/log"
-	"github.com/omniscale/imposm3/mapping"
-	"github.com/omniscale/imposm3/stats"
+	osmcache "github.com/nextgis/imposm3/cache"
+	"github.com/nextgis/imposm3/geom/geos"
+	"github.com/nextgis/imposm3/geom/limit"
+	"github.com/nextgis/imposm3/log"
+	"github.com/nextgis/imposm3/mapping"
+	"github.com/nextgis/imposm3/stats"
 	"github.com/pkg/errors"
 )
 

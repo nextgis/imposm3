@@ -4,14 +4,14 @@ import (
 	"sync"
 
 	osm "github.com/omniscale/go-osm"
-	"github.com/omniscale/imposm3/cache"
-	"github.com/omniscale/imposm3/database"
-	"github.com/omniscale/imposm3/expire"
-	geomp "github.com/omniscale/imposm3/geom"
-	"github.com/omniscale/imposm3/geom/geos"
-	"github.com/omniscale/imposm3/log"
-	"github.com/omniscale/imposm3/mapping"
-	"github.com/omniscale/imposm3/stats"
+	"github.com/nextgis/imposm3/cache"
+	"github.com/nextgis/imposm3/database"
+	"github.com/nextgis/imposm3/expire"
+	geomp "github.com/nextgis/imposm3/geom"
+	"github.com/nextgis/imposm3/geom/geos"
+	"github.com/nextgis/imposm3/log"
+	"github.com/nextgis/imposm3/mapping"
+	"github.com/nextgis/imposm3/stats"
 )
 
 type WayWriter struct {

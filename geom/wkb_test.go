@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	osm "github.com/omniscale/go-osm"
-	"github.com/omniscale/imposm3/geom/geos"
+	"github.com/nextgis/imposm3/geom/geos"
 )
 
 func TestWkbLineString(t *testing.T) {

@@ -6,13 +6,13 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/omniscale/imposm3"
-	"github.com/omniscale/imposm3/cache/query"
-	"github.com/omniscale/imposm3/config"
-	"github.com/omniscale/imposm3/import_"
-	"github.com/omniscale/imposm3/log"
-	"github.com/omniscale/imposm3/stats"
-	"github.com/omniscale/imposm3/update"
+	"github.com/nextgis/imposm3"
+	"github.com/nextgis/imposm3/cache/query"
+	"github.com/nextgis/imposm3/config"
+	"github.com/nextgis/imposm3/import_"
+	"github.com/nextgis/imposm3/log"
+	"github.com/nextgis/imposm3/stats"
+	"github.com/nextgis/imposm3/update"
 )
 
 func PrintCmds() {

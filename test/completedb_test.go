@@ -7,14 +7,14 @@ import (
 	"os"
 
 	osm "github.com/omniscale/go-osm"
-	"github.com/omniscale/imposm3/cache"
+	"github.com/nextgis/imposm3/cache"
 
-	"github.com/omniscale/imposm3/geom"
-	"github.com/omniscale/imposm3/proj"
+	"github.com/nextgis/imposm3/geom"
+	"github.com/nextgis/imposm3/proj"
 
 	"testing"
 
-	"github.com/omniscale/imposm3/geom/geos"
+	"github.com/nextgis/imposm3/geom/geos"
 )
 
 func TestComplete(t *testing.T) {

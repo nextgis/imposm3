@@ -3,7 +3,7 @@ package limit
 import (
 	"testing"
 
-	"github.com/omniscale/imposm3/geom/geos"
+	"github.com/nextgis/imposm3/geom/geos"
 )
 
 func TestTileBounds(t *testing.T) {

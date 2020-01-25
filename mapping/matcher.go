@@ -2,7 +2,7 @@ package mapping
 
 import (
 	osm "github.com/omniscale/go-osm"
-	"github.com/omniscale/imposm3/geom"
+	"github.com/nextgis/imposm3/geom"
 )
 
 func (m *Mapping) pointMatcher() (NodeMatcher, error) {

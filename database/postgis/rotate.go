@@ -3,7 +3,7 @@ package postgis
 import (
 	"fmt"
 
-	"github.com/omniscale/imposm3/log"
+	"github.com/nextgis/imposm3/log"
 )
 
 func (pg *PostGIS) rotate(source, dest, backup string) error {

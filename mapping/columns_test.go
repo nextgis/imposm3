@@ -4,9 +4,9 @@ import (
 	"testing"
 
 	osm "github.com/omniscale/go-osm"
-	"github.com/omniscale/imposm3/geom"
-	"github.com/omniscale/imposm3/geom/geos"
-	"github.com/omniscale/imposm3/mapping/config"
+	"github.com/nextgis/imposm3/geom"
+	"github.com/nextgis/imposm3/geom/geos"
+	"github.com/nextgis/imposm3/mapping/config"
 )
 
 func TestBool(t *testing.T) {
