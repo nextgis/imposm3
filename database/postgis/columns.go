@@ -58,8 +58,14 @@ func (t *validatedGeometryType) GeneralizeSQL(colSpec *ColumnSpec, spec *General
 		// TODO return warning earlier
 		log.Printf("[warn] validated_geometry column returns polygon geometries for %s", spec.FullName)
 	}
-	return fmt.Sprintf(`(ST_Dump(ST_MakeValid(ST_Buffer(ST_SimplifyPreserveTopology("%s", %f), 0)))).geom as "%s"`,
-		colSpec.Name, spec.Tolerance, colSpec.Name,
+	// Original
+	// (ST_Dump(ST_Buffer(ST_SimplifyPreserveTopology("%s", %f), 0))).geom
+
+	// New
+	// (ST_Dump(CASE WHEN ST_IsValid(ST_Buffer(ST_SimplifyPreserveTopology("%s", %f), 0)) THEN ST_Buffer(ST_SimplifyPreserveTopology("%s", %f), 0) ELSE ST_GeomFromText("POLYGON(EMPTY)") END)).geom  
+
+	return fmt.Sprintf(`(ST_Dump(CASE WHEN ST_IsValid(ST_Buffer(ST_SimplifyPreserveTopology("%s", %f), 0)) THEN ST_Buffer(ST_SimplifyPreserveTopology("%s", %f), 0) ELSE ST_GeomFromText("POLYGON(EMPTY)") END)).geom as "%s"`,
+		colSpec.Name, spec.Tolerance, colSpec.Name, spec.Tolerance, colSpec.Name,
 	)
 }
 
