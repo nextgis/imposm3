@@ -44,14 +44,12 @@ func (t *geometryType) PrepareInsertSQL(i int, spec *TableSpec) string {
 }
 
 func (t *geometryType) GeneralizeSQL(colSpec *ColumnSpec, spec *GeneralizedTableSpec) string {
-
-	return fmt.Sprintf(`CASE WHEN ST_IsValid(ST_SimplifyPreserveTopology("%s", %f)) THEN ST_SimplifyPreserveTopology("%s", %f) ELSE "%s" AS "%s"`,
-		colSpec.Name, spec.Tolerance, colSpec.Name, spec.Tolerance, colSpec.Name, colSpec.Name,
+	if spec.Source.GeometryType == "point" {
+		return fmt.Sprintf(`"%s"`, colSpec.Name)
+	}
+	return fmt.Sprintf(`ST_SimplifyPreserveTopology("%s", %f) as "%s"`,
+		colSpec.Name, spec.Tolerance, colSpec.Name,
 	)
-
-	// return fmt.Sprintf(`ST_MakeValid(ST_SimplifyPreserveTopology("%s", %f)) as "%s"`,
-	// 	colSpec.Name, spec.Tolerance, colSpec.Name,
-	// )
 }
 
 type validatedGeometryType struct {
