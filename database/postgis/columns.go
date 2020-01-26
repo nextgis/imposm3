@@ -44,7 +44,7 @@ func (t *geometryType) PrepareInsertSQL(i int, spec *TableSpec) string {
 }
 
 func (t *geometryType) GeneralizeSQL(colSpec *ColumnSpec, spec *GeneralizedTableSpec) string {
-	return fmt.Sprintf(`ST_SimplifyPreserveTopology("%s", %f) as "%s"`,
+	return fmt.Sprintf(`ST_MakeValid(ST_SimplifyPreserveTopology("%s", %f)) as "%s"`,
 		colSpec.Name, spec.Tolerance, colSpec.Name,
 	)
 }
@@ -64,7 +64,7 @@ func (t *validatedGeometryType) GeneralizeSQL(colSpec *ColumnSpec, spec *General
 	// New
 	// (ST_Dump(CASE WHEN ST_IsValid(ST_Buffer(ST_SimplifyPreserveTopology("%s", %f), 0)) THEN ST_Buffer(ST_SimplifyPreserveTopology("%s", %f), 0) ELSE ST_GeomFromText("POLYGON(EMPTY)") END)).geom  
 
-	return fmt.Sprintf(`(ST_Dump(CASE WHEN ST_IsValid(ST_Buffer(ST_SimplifyPreserveTopology("%s", %f), 0)) THEN ST_Buffer(ST_SimplifyPreserveTopology("%s", %f), 0) ELSE ST_GeomFromText("POLYGON(EMPTY)") END)).geom as "%s"`,
+	return fmt.Sprintf(`(ST_Dump(ST_Buffer(ST_SimplifyPreserveTopology("%s", %f), 0))).geom as "%s"`,
 		colSpec.Name, spec.Tolerance, colSpec.Name, spec.Tolerance, colSpec.Name,
 	)
 }
